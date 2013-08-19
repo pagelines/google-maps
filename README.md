@@ -4,7 +4,10 @@ google-maps
 The only Google Maps section you'll ever need.
 
 Supports:
-• Multiple pins
+
+<ul>
+<li> Multiple pins</li>
+</ul>
 • Custom color
 • Custom map-pin
 • Titles
