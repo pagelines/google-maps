@@ -48,19 +48,19 @@ class GoogleMaps extends PageLinesSection {
 					'count_start'	=> 1,
 					'count_number'	=> 20,
 					'default'		=> '12',
-					'label' 	=> __( 'Zoom level on map, where 1 is zoomed out.', 'google-maps' )
+					'label' 	=> __( 'Zoom level on map, where 1 is zoomed out', 'google-maps' )
 				),
 				array(
 					'key'			=> 'map_height',
 					'type' 			=> 'text',
 					'default'		=> '360',
-					'label' 	=> __( 'Map height in pixels (without px).', 'google-maps' )
+					'label' 	=> __( 'Map height in pixels (without px)', 'google-maps' )
 				),
 				array(
 					'key'			=> 'map_color',
 					'type' 			=> 'color',
 					'default'		=> 'ff0000',
-					'label' 	=> __( 'Map color.', 'google-maps' )
+					'label' 	=> __( 'Map color', 'google-maps' )
 				)
 			)
 
@@ -113,7 +113,7 @@ class GoogleMaps extends PageLinesSection {
 		$num = ($this->opt('mappins_count')) ? $this->opt('mappins_count') : $this->default_limit;
 		$output = '';
 		
-		$zoom = ($this->opt('map_zoom')) ? $this->opt('map_zoom') : $this->default_zoom;
+		$zoom = ($this->opt('map_zoom')) ? $this->opt('map_zoom') : '12';
 		$height = ($this->opt('map_height')) ? $this->opt('map_height') : '360';
 		$color = ($this->opt('map_color')) ? $this->opt('map_color') : 'ff0000';
 	
